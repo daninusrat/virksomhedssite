@@ -66,3 +66,26 @@ html {
   font-weight: normal;
   font-style: normal;
 }
+
+/* knapper */
+.button {
+  background-color: transparent;
+  display: flex;
+  width: fit-content;
+  padding: 7px 9px 7px 9px;
+  border-radius: 25px;
+  border: 1px solid var(--grøn);
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  font-family: "neue_haas_grotesk_display45Lt";
+  font-size: 16px;
+}
+
+.button a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  color: var(--grøn);
+  margin: 0 auto;
+}
