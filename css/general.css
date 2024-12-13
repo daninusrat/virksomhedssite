@@ -89,3 +89,48 @@ html {
   color: var(--grøn);
   margin: 0 auto;
 }
+
+/* Burger menu */
+.menu {
+  display: none;
+}
+.burger {
+  display: block;
+  margin: 1em;
+}
+.burger.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  transition: 0.2s linear;
+}
+
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+  transition: 0.15s linear;
+}
+
+.burger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  transition: 0.2s linear;
+}
+
+nav.active .menu {
+  display: block;
+  background-color: var(--primary_beige);
+  position: absolute;
+  top: 94px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav.active .menu li {
+  margin: 5px 20px;
+}
+
+nav.active .menu a {
+  font-size: 18px;
+  color: var(--grøn);
+}
+
+@media (min-width: 800px) {
+}
