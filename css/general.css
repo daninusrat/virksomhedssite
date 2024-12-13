@@ -1,0 +1,24 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+html {
+  --primary_beige: #fffaef;
+  --grøn: #315353;
+  --brun: #6f5050;
+  --rød: #8d3232;
+
+  --space_xs: ;
+  --space_s: ;
+  --space_m: ;
+  --space_l: ;
+  --space_xl: ;
+}
