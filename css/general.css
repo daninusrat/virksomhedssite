@@ -84,12 +84,11 @@ main {
   background-color: transparent;
   display: flex;
   width: fit-content;
-  padding: 7px 9px 7px 9px;
-  border-radius: 25px;
+  padding: 7px 25px 7px 25px;
+  border-radius: 35px;
   border: 1px solid var(--grøn);
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 3rem;
   font-family: "neue_haas_grotesk_display45Lt";
   font-size: 16px;
 }
@@ -106,10 +105,12 @@ main {
 .menu {
   display: none;
 }
+
 .burger {
   display: block;
   margin: 1em;
 }
+
 .burger.active .line:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
   transition: 0.2s linear;
@@ -127,7 +128,7 @@ main {
 
 nav.active .menu {
   display: block;
-  background-color: var(--primary_beige);
+  background-color: rgb(255, 69, 49);
   position: absolute;
   top: 94px;
   left: 0;
@@ -141,10 +142,23 @@ nav.active .menu li {
 
 nav.active .menu a {
   font-size: 18px;
-  color: var(--grøn);
+  color: rgb(248, 242, 234);
 }
 
-@media (min-width: 800px) {
+.logo {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  margin-top: 1rem;
+}
+
+.img_logo {
+  width: 120px;
+  height: auto;
+}
+
+@media (min-width: 920px) {
   /* header og nav */
 
   header {
