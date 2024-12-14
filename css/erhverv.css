@@ -54,6 +54,7 @@ p {
   max-width: 55ch;
   color: var(--primary_beige);
   margin-left: -1.5rem;
+  margin-top: 1rem;
 }
 
 .p_2 {
@@ -118,11 +119,20 @@ p {
   font-size: 13px;
 }
 
+.img_surf {
+  grid-column: 1 / span 2;
+}
+
 @media (min-width: 920px) {
   .button {
     padding: 7px 25px 7px 25px;
     font-size: 16px;
   }
+
+  .img_surf {
+    grid-column: 3;
+  }
+
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -134,14 +144,14 @@ p {
 
   .img_bornehave {
     width: 750px;
-    height: 450px;
+    height: 530px;
     object-fit: cover;
     align-self: stretch;
   }
 
   .img_2-drenge {
     width: 700px;
-    height: 430px;
+    height: 500px;
     object-fit: cover;
     align-self: stretch;
   }
@@ -185,7 +195,7 @@ p {
     margin-bottom: 1rem;
     color: var(--grøn);
     margin-left: 1.5rem;
-    margin-top: 0rem;
+    margin-top: 4rem;
   }
 
   p {
@@ -214,7 +224,7 @@ p {
   }
 
   .div_BVF {
-    margin-top: 4.5rem;
+    margin-top: 1.5rem;
     margin-left: 2rem;
   }
 }
