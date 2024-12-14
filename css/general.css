@@ -252,28 +252,4 @@ nav.active .menu a {
     width: 250px;
     height: auto;
   }
-
-  /* 
-  .li_dropdown {
-    cursor: pointer;
-    display: inline;
-  }
-  .li_dropdown .content {
-    display: none;
-    position: absolute;
-    background-color: var(--primary_beige);
-    min-width: 150px;
-  }
-
-  .li_dropdown:hover .content {
-    display: block;
-  }
-
-  .li_dropdown:hover {
-    transform: scale(1.03);
-  }
-
-  .burger {
-    display: none;
-  } */
 }
