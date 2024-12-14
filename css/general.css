@@ -10,6 +10,7 @@ img {
   display: block;
 }
 
+/* html variabler */
 html {
   --primary_beige: #fffaef;
   --grøn: #315353;
@@ -23,10 +24,21 @@ html {
   --space_xl: ;
 }
 
+/* body og main */
+body {
+  background-color: var(--primary_beige);
+}
+
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: var(--primary_beige);
+}
+
 /* bold */
 @font-face {
   font-family: "neue_haas_grotesk_display75Bd";
-  src: url(fonte/neue/neuehaasdisplay-bold-webfont.woff2) format("woff2"), url(fonte/neue/neuehaasdisplay-bold-webfont.woff) format("woff");
+  src: url(../fonte/neue/neuehaasdisplay-bold-webfont.woff2) format("woff2"), url(../fonte/neue/neuehaasdisplay-bold-webfont.woff) format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -35,7 +47,7 @@ html {
 
 @font-face {
   font-family: "neue_haas_grotesk_display45Lt";
-  src: url(fonte/neue/neuehaasdisplay-light-webfont.woff2) format("woff2"), url(fonte/neue/neuehaasdisplay-light-webfont.woff) format("woff");
+  src: url(../fonte/neue/neuehaasdisplay-light-webfont.woff2) format("woff2"), url(../fonte/neue/neuehaasdisplay-light-webfont.woff) format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -44,7 +56,7 @@ html {
 
 @font-face {
   font-family: "neue_haas_grotesk_display65Md";
-  src: url(fonte/neue/neuehaasdisplay-mediu-webfont.woff2) format("woff2"), url(fonte/neue/neuehaasdisplay-mediu-webfont.woff) format("woff");
+  src: url(../fonte/neue/neuehaasdisplay-mediu-webfont.woff2) format("woff2"), url(../fonte/neue/neuehaasdisplay-mediu-webfont.woff) format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -53,7 +65,7 @@ html {
 
 @font-face {
   font-family: "neue_haas_grotesk_display35Th";
-  src: url(fonte/neue/neuehaasdisplay-thin-webfont.woff2) format("woff2"), url(fonte/neue/neuehaasdisplay-thin-webfont.woff) format("woff");
+  src: url(../fonte/neue/neuehaasdisplay-thin-webfont.woff2) format("woff2"), url(../fonte/neue/neuehaasdisplay-thin-webfont.woff) format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -62,7 +74,7 @@ html {
 
 @font-face {
   font-family: "neue_haas_grotesk_displa95Blk";
-  src: url(fonte/neue/neuehaasdisplay-black-webfont.woff2) format("woff2"), url(fonte/neue/neuehaasdisplay-black-webfont.woff) format("woff");
+  src: url(../fonte/neue/neuehaasdisplay-black-webfont.woff2) format("woff2"), url(../fonte/neue/neuehaasdisplay-black-webfont.woff) format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -133,4 +145,135 @@ nav.active .menu a {
 }
 
 @media (min-width: 800px) {
+  /* header og nav */
+
+  header {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--primary_beige);
+    border-radius: 35px;
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 25px;
+    color: rgb(0, 0, 0);
+    font-family: "neue_haas_grotesk_display65Md";
+    text-decoration: none;
+    transition: color 0.3s;
+    text-align: center;
+  }
+
+  .menu a:hover {
+    transform: scale(1.03);
+  }
+
+  ul {
+    list-style: none;
+    background-color: var(--primary_beige);
+  }
+  ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+  }
+
+  ul li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: start;
+    font-size: 17px;
+  }
+
+  ul li ul.dropdown li {
+    display: block;
+  }
+
+  ul li ul.dropdown li a {
+    font-size: 14px;
+    text-align: start;
+  }
+
+  ul li ul.dropdown {
+    width: 200px;
+    background-color: #fcf5e6;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul li:hover ul.dropdown {
+    display: block;
+  }
+
+  .burger {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .burger .line {
+    width: 100%;
+    height: 2px;
+    background-color: #333333;
+    margin-bottom: 5px;
+    transition: 0.2s linear;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 1rem;
+  }
+
+  .img_logo {
+    width: 250px;
+    height: auto;
+  }
+
+  /* 
+  .li_dropdown {
+    cursor: pointer;
+    display: inline;
+  }
+  .li_dropdown .content {
+    display: none;
+    position: absolute;
+    background-color: var(--primary_beige);
+    min-width: 150px;
+  }
+
+  .li_dropdown:hover .content {
+    display: block;
+  }
+
+  .li_dropdown:hover {
+    transform: scale(1.03);
+  }
+
+  .burger {
+    display: none;
+  } */
 }
