@@ -9,3 +9,17 @@ img {
   height: auto;
   display: block;
 }
+
+@media (max-width: 1199px) {
+  .grid_1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid_1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
