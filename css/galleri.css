@@ -14,6 +14,11 @@ img {
   .grid_1_1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  .gone {
+    display: none;
   }
 }
 
@@ -21,5 +26,15 @@ img {
   .grid_1_1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
   }
+}
+
+.uden_header {
+  background-color: #6f5050;
+}
+
+main {
+  background-color: #6f5050;
 }
