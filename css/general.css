@@ -162,6 +162,36 @@ nav.active .menu a {
   height: auto;
 }
 
+.grid_1-1-1_foot {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.p_foot-1 {
+  color: black;
+  line-height: 18px;
+  font-size: 10px;
+}
+
+.p_foot-2 {
+  color: black;
+  line-height: 18px;
+  text-align: center;
+  font-size: 8px;
+}
+
+.p_foot-3 {
+  color: black;
+  text-align: end;
+  line-height: 20px;
+  font-size: 10px;
+  display: grid;
+  margin-right: 1.5rem;
+}
+
 @media (min-width: 920px) {
   /* header og nav */
 
@@ -269,5 +299,37 @@ nav.active .menu a {
   .img_logo {
     width: 250px;
     height: auto;
+  }
+
+  .grid_1-1-1_foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+  }
+
+  .p_foot-1 {
+    color: black;
+    margin-left: 6.5rem;
+    line-height: 28px;
+    font-size: 16px;
+  }
+
+  .p_foot-2 {
+    display: block;
+    color: black;
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 28px;
+    font-size: 16px;
+  }
+
+  .p_foot-3 {
+    color: black;
+    text-align: end;
+    margin-right: 6.5rem;
+    line-height: 28px;
+    font-size: 16px;
   }
 }
