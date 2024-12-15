@@ -17,6 +17,9 @@ img {
     gap: 20px;
     padding: 20px;
   }
+  .gone {
+    display: none;
+  }
 }
 
 @media (min-width: 1200px) {
