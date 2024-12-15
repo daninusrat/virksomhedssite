@@ -174,6 +174,7 @@ nav.active .menu a {
   color: black;
   line-height: 18px;
   font-size: 10px;
+  font-family: "neue_haas_grotesk_display65Md";
 }
 
 .p_foot-2 {
@@ -181,6 +182,7 @@ nav.active .menu a {
   line-height: 18px;
   text-align: center;
   font-size: 8px;
+  font-family: "neue_haas_grotesk_display45Lt";
 }
 
 .p_foot-3 {
@@ -190,6 +192,7 @@ nav.active .menu a {
   font-size: 10px;
   display: grid;
   margin-right: 1.5rem;
+  font-family: "neue_haas_grotesk_display65Md";
 }
 
 @media (min-width: 920px) {
@@ -314,6 +317,7 @@ nav.active .menu a {
     margin-left: 6.5rem;
     line-height: 28px;
     font-size: 16px;
+    font-family: "neue_haas_grotesk_display65Md";
   }
 
   .p_foot-2 {
@@ -323,6 +327,8 @@ nav.active .menu a {
     margin-top: 2rem;
     line-height: 28px;
     font-size: 16px;
+    font-family: "neue_haas_grotesk_display45Lt";
+    margin-left: 3rem;
   }
 
   .p_foot-3 {
@@ -331,5 +337,6 @@ nav.active .menu a {
     margin-right: 6.5rem;
     line-height: 28px;
     font-size: 16px;
+    font-family: "neue_haas_grotesk_display65Md";
   }
 }
