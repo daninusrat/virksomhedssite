@@ -105,63 +105,6 @@ main {
   margin: 0 auto;
 }
 
-/* Burger menu */
-.menu {
-  display: none;
-}
-
-.burger {
-  display: block;
-  margin: 1rem;
-}
-
-.burger.active .line:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-  transition: 0.2s linear;
-}
-
-.burger.active .line:nth-child(2) {
-  opacity: 0;
-  transition: 0.15s linear;
-}
-
-.burger.active .line:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-  transition: 0.2s linear;
-}
-
-nav.active .menu {
-  display: block;
-  background-color: var(--rød);
-  position: absolute;
-  top: 94px;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-nav.active .menu li {
-  margin: 5px 20px;
-}
-
-nav.active .menu a {
-  font-size: 18px;
-  color: var(--brun);
-}
-
-.logo {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0;
-  margin-top: 1rem;
-}
-
-.img_logo {
-  width: 120px;
-  height: auto;
-}
-
 .grid_1-1-1_foot {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -173,6 +116,8 @@ nav.active .menu a {
 .p_foot-1 {
   color: black;
   line-height: 18px;
+  margin-left: 1rem;
+  margin-top: 2rem;
   font-size: 10px;
   font-family: "neue_haas_grotesk_display65Md";
 }
@@ -182,6 +127,7 @@ nav.active .menu a {
   line-height: 18px;
   text-align: center;
   font-size: 8px;
+  margin-top: 2rem;
   font-family: "neue_haas_grotesk_display45Lt";
 }
 
@@ -190,120 +136,13 @@ nav.active .menu a {
   text-align: end;
   line-height: 20px;
   font-size: 10px;
+  margin-top: 2rem;
   display: grid;
   margin-right: 1.5rem;
   font-family: "neue_haas_grotesk_display65Md";
 }
 
 @media (min-width: 920px) {
-  /* header og nav */
-
-  header {
-    display: flex;
-    max-width: 1000px;
-    margin: 0 auto;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: var(--primary_beige);
-    border-radius: 35px;
-  }
-
-  .menu {
-    display: flex;
-    list-style: none;
-    font-size: 17px;
-    margin: 0;
-    padding: 0;
-  }
-
-  .menu a {
-    display: block;
-    padding: 10px 25px;
-    color: rgb(0, 0, 0);
-    font-family: "neue_haas_grotesk_display65Md";
-    text-decoration: none;
-    transition: color 0.3s;
-    text-align: center;
-  }
-
-  .menu a:hover {
-    transform: scale(1.03);
-  }
-
-  ul {
-    list-style: none;
-    background-color: var(--primary_beige);
-  }
-  ul li {
-    display: inline-block;
-    position: relative;
-    margin-right: 20px;
-  }
-
-  ul li a {
-    display: block;
-    color: black;
-    text-decoration: none;
-    text-align: start;
-    font-size: 17px;
-  }
-
-  ul li ul.dropdown li {
-    display: block;
-  }
-
-  ul li ul.dropdown li a {
-    font-size: 14px;
-    text-align: start;
-  }
-
-  ul li ul.dropdown {
-    width: 200px;
-    background-color: #fcf5e6;
-    position: absolute;
-    z-index: 999;
-    display: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  ul li:hover ul.dropdown {
-    display: block;
-  }
-
-  .burger {
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-  }
-  .burger .line {
-    width: 100%;
-    height: 2px;
-    background-color: #333333;
-    margin-bottom: 5px;
-    transition: 0.2s linear;
-  }
-
-  .burger {
-    display: none;
-  }
-
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    margin-top: 1rem;
-  }
-
-  .img_logo {
-    width: 250px;
-    height: auto;
-  }
-
   .grid_1-1-1_foot {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

@@ -20,6 +20,16 @@ img {
   .gone {
     display: none;
   }
+
+  .img__logo {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 200px;
+    height: auto;
+    margin-left: 10rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -28,6 +38,16 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
+  }
+
+  .img__logo {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 400px;
+    height: auto;
+    margin-left: 37rem;
   }
 }
 
