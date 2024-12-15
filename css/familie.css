@@ -1,0 +1,231 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+html {
+  --primary_beige: #fffaef;
+  --grøn: #315353;
+  --brun: #6f5050;
+  --rød: #8d3232;
+
+  --space_xs: ;
+  --space_s: ;
+  --space_m: ;
+  --space_l: ;
+  --space_xl: ;
+}
+
+.img {
+  object-fit: cover;
+  align-self: stretch;
+}
+
+h1 {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 24px;
+  margin-bottom: 1rem;
+  margin: 0 auto;
+  color: var(--primary_beige);
+  margin-left: -1.5rem;
+}
+
+.h1_2 {
+  font-family: "neue_haas_grotesk_display65Md";
+  margin-top: 2rem;
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: var(--grøn);
+  margin-left: auto;
+}
+
+p {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 15px;
+  margin-bottom: 1rem;
+  line-height: 22px;
+  max-width: 55ch;
+  color: var(--primary_beige);
+  margin-left: -1.5rem;
+  margin-top: 1rem;
+}
+
+.p_2 {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 15px;
+  margin-bottom: 1rem;
+  line-height: 27px;
+  color: var(--grøn);
+  margin-left: auto;
+}
+
+.p_cta {
+  color: var(--grøn);
+  margin-left: auto;
+}
+
+.div_BVF {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.grid_1-1 {
+  padding: 30px;
+  background-color: var(--grøn);
+}
+
+.grid_1-1-2 {
+  padding: 30px;
+}
+
+.grid_1-1-cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 1rem;
+}
+
+.grid_1_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 80px;
+  background-color: var(--grøn);
+  margin: 0 auto;
+}
+.grid_1_1_1 img {
+  object-fit: cover;
+  align-self: stretch;
+}
+
+.img__logo {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 200px;
+  height: auto;
+  align-items: center;
+}
+
+.button {
+  padding: 0px 15px 0px 15px;
+  font-size: 13px;
+}
+
+.img_surf {
+  grid-column: 1 / span 2;
+}
+
+@media (min-width: 920px) {
+  .button {
+    padding: 7px 25px 7px 25px;
+    font-size: 16px;
+  }
+
+  .img_surf {
+    grid-column: 3;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 40px;
+    background-color: var(--grøn);
+  }
+
+  .img_bornehave {
+    width: 750px;
+    height: 530px;
+    object-fit: cover;
+    align-self: stretch;
+  }
+
+  .img_2-drenge {
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+    align-self: stretch;
+  }
+
+  .grid_1-1-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .grid_1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 25px auto 50px;
+    grid-gap: 30px;
+  }
+
+  .img__logo {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 400px;
+    height: auto;
+    align-items: center;
+  }
+
+  h1 {
+    font-family: "neue_haas_grotesk_display65Md";
+    font-size: 30px;
+    margin: 0 auto;
+    color: var(--primary_beige);
+    margin-left: -1.5rem;
+    margin-top: 3rem;
+  }
+
+  .h1_2 {
+    font-family: "neue_haas_grotesk_display65Md";
+    font-size: 26px;
+    margin-bottom: 1rem;
+    color: var(--grøn);
+    margin-left: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  p {
+    font-family: "neue_haas_grotesk_display65Md";
+    font-size: 15px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    line-height: 22px;
+    max-width: 44ch;
+    color: var(--primary_beige);
+    margin-left: -1.5rem;
+  }
+
+  .p_2 {
+    font-family: "neue_haas_grotesk_display65Md";
+    font-size: 15px;
+    margin-bottom: 1rem;
+    line-height: 27px;
+    color: var(--grøn);
+    margin-left: 1.5rem;
+  }
+
+  .p_cta {
+    color: var(--grøn);
+    margin-left: 1.5rem;
+  }
+
+  .div_BVF {
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+  }
+}
