@@ -129,7 +129,7 @@ ul li:hover ul.dropdown {
 
   .menu {
     display: none;
-    grid-template-columns: unset; /* Fjerner eventuelle grid-kolonner */
+    grid-template-columns: unset; /* Fjerner eventuelle grid-kolonner -- overskrider tidligere */
     grid-gap: unset;
   }
   .burger {
@@ -151,7 +151,8 @@ ul li:hover ul.dropdown {
   }
 
   nav.active .menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     position: absolute;
     top: 94px;
