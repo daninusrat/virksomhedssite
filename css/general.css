@@ -16,12 +16,6 @@ html {
   --grøn: #315353;
   --brun: #6f5050;
   --rød: #8d3232;
-
-  --space_xs: ;
-  --space_s: ;
-  --space_m: ;
-  --space_l: ;
-  --space_xl: ;
 }
 
 /* body og main */
@@ -128,6 +122,7 @@ main {
   text-align: center;
   font-size: 8px;
   margin-top: 2rem;
+  margin-left: 1rem;
   font-family: "neue_haas_grotesk_display45Lt";
 }
 
