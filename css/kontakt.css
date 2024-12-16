@@ -15,23 +15,21 @@ html {
   --grøn: #315353;
   --brun: #6f5050;
   --rød: #8d3232;
-
-  --space_xs: ;
-  --space_s: ;
-  --space_m: ;
-  --space_l: ;
-  --space_xl: ;
 }
 
-.img__logo {
+.button_2 {
+  text-decoration: none;
+  background-color: transparent;
   display: flex;
-  margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  width: 200px;
-  height: auto;
-  align-items: center;
+  width: fit-content;
+  padding: 8px 15px 8px 15px;
+  border-radius: 35px;
+  color: var(--primary_beige);
+  border: 2px solid var(--primary_beige);
+  font-family: "neue_haas_grotesk_display45Lt";
+  font-size: 16px;
 }
+
 .img {
   object-fit: cover;
   align-self: stretch;
@@ -40,9 +38,11 @@ html {
 /* H2 Slogan */
 .slogan {
   text-align: center;
-  margin: 2rem auto;
-  font-size: 1.5rem;
-  color: var(--grøn);
+  font-family: "neue_haas_grotesk_display65Md";
+  line-height: 28px;
+  font-size: 1.1rem;
+  color: var(--brun);
+  margin-top: 2rem;
 }
 
 .kontakt-container {
@@ -53,19 +53,25 @@ html {
   padding: 2rem;
   margin: 2rem auto;
   max-width: 1200px;
-  border-radius: 8px;
+  font-family: "neue_haas_grotesk_display65Md";
 }
 
 .kontakt-form {
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: var(--primary_beige);
 }
 
 .kontakt-form label {
   margin-bottom: 0.5rem;
   font-weight: bold;
+}
+
+.kontakt-info {
+  margin-bottom: 2rem;
 }
 
 .kontakt-form input,
@@ -75,7 +81,7 @@ html {
   margin-bottom: 1rem;
   border: none;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: var(--primary_beige);
   color: #333;
 }
 
@@ -107,7 +113,58 @@ html {
   padding: 2rem 0;
 }
 
-@media (min-width: 768px) {
+h3 {
+  margin-top: 2rem;
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 22px;
+  color: var(--primary_beige);
+}
+
+h2 {
+  font-family: "neue_haas_grotesk_display45Lt";
+  font-size: 16px;
+  margin-top: 0.5rem;
+  color: var(--primary_beige);
+}
+
+p {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 16px;
+  margin-top: 0.7rem;
+  color: var(--primary_beige);
+}
+
+.img__logo {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 200px;
+  height: auto;
+  margin-left: 11rem;
+}
+
+/* Desktop: Vis alle tre billeder */
+@media (min-width: 920px) {
+  .grid_1-1-1 {
+    grid-template-columns: 1fr 1fr 1fr; /* Tre kolonner på desktop */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .img__logo {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 400px;
+    height: auto;
+    margin-left: 32rem;
+  }
+
+  .billede-hidden {
+    display: block; /* Vis de skjulte billeder */
+  }
   .kontakt-container {
     flex-direction: row;
     gap: 4rem;
@@ -118,16 +175,48 @@ html {
   .kontakt-info {
     max-width: 45%;
   }
-  /* Desktop: Vis alle tre billeder */
-  @media (min-width: 768px) {
-    .grid_1-1-1 {
-      grid-template-columns: 1fr 1fr 1fr; /* Tre kolonner på desktop */
-      max-width: 1200px;
-      margin: 0 auto;
-    }
 
-    .billede-hidden {
-      display: block; /* Vis de skjulte billeder */
-    }
+  .kontakt-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color: var(--primary_beige);
+  }
+
+  .kontakt-form input,
+  .kontakt-form textarea {
+    width: 100%;
+  }
+  .slogan {
+    text-align: center;
+    font-family: "neue_haas_grotesk_display65Md";
+    line-height: 33px;
+    font-size: 1.4rem;
+    color: var(--brun);
+    margin-top: 2rem;
+  }
+
+  h3 {
+    margin-top: 2rem;
+    font-family: "neue_haas_grotesk_display65Md";
+    font-size: 22px;
+    color: var(--primary_beige);
+  }
+
+  h2 {
+    font-family: "neue_haas_grotesk_display45Lt";
+    font-size: 16px;
+    margin-top: 0.5rem;
+    color: var(--primary_beige);
+  }
+
+  p {
+    font-family: "neue_haas_grotesk_display65Md";
+    font-size: 16px;
+    margin-top: 0.7rem;
+    color: var(--primary_beige);
   }
 }
