@@ -9,3 +9,230 @@ img {
   height: auto;
   display: block;
 }
+
+html {
+  --primary_beige: #fffaef;
+  --grøn: #315353;
+  --brun: #6f5050;
+  --rød: #8d3232;
+
+  --space_xs: ;
+  --space_s: ;
+  --space_m: ;
+  --space_l: ;
+  --space_xl: ;
+}
+
+.img {
+  object-fit: cover;
+  align-self: stretch;
+}
+
+h1 {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 20px;
+  margin: 0 auto;
+  color: var(--grøn);
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.h1_2 {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 20px;
+  color: var(--grøn);
+  margin-left: 1rem;
+  text-align: start;
+}
+
+p {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 15px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  line-height: 22px;
+  max-width: 50ch;
+  color: var(--grøn);
+  margin-left: 1rem;
+}
+
+.p_2 {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 14px;
+  margin-bottom: 2rem;
+  color: var(--grøn);
+  text-align: start;
+  margin-left: 1rem;
+}
+
+.p_3 {
+  font-family: "neue_haas_grotesk_display45Lt";
+  font-size: 14px;
+  color: var(--primary_beige);
+  margin-left: 1rem;
+}
+h3 {
+  font-family: "neue_haas_grotesk_display45Lt";
+  font-size: 17px;
+  margin-bottom: 1rem;
+  color: var(--grøn);
+  margin-left: 1rem;
+  text-align: start;
+}
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  padding: 40px;
+}
+
+.grid_1-1-1-1 img {
+  height: 200px;
+  width: 200px;
+}
+
+.grid_1-1 {
+  padding: 30px;
+}
+
+.anmeld {
+  background-color: var(--brun);
+}
+
+.grid_1-1-2 {
+  padding: 30px;
+}
+
+.img__logo {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  width: 200px;
+  height: auto;
+  align-items: center;
+}
+
+.button {
+  padding: 3px 15px 3px 15px;
+  font-size: 13px;
+  margin: 1rem;
+}
+
+@media (min-width: 920px) {
+  .button {
+    padding: 7px 25px 7px 25px;
+    font-size: 16px;
+    margin: 1rem;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 40px;
+  }
+
+  .img_bornehave {
+    width: 750px;
+    height: 530px;
+    object-fit: cover;
+    align-self: stretch;
+  }
+
+  .img_2-drenge {
+    width: 550px;
+    height: 700px;
+    object-fit: cover;
+    margin-left: 4rem;
+    align-self: stretch;
+  }
+
+  .grid_1-1-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 25px auto 50px;
+    grid-gap: 30px;
+    padding: 40px;
+  }
+
+  .grid_1-1-1-1 img {
+    height: 300px;
+    width: 300px;
+  }
+  .anmeld {
+    background-color: var(--brun);
+  }
+
+  .img__logo {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 400px;
+    height: auto;
+    margin-left: 31rem;
+  }
+
+  h1 {
+    font-family: "neue_haas_grotesk_display65Md";
+    font-size: 30px;
+    margin: 0 auto;
+    color: var(--grøn);
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  .h1_2 {
+    font-family: "neue_haas_grotesk_display65Md";
+    font-size: 26px;
+    color: var(--grøn);
+    margin-left: 1.5rem;
+    margin-top: 4rem;
+    text-align: end;
+  }
+
+  p {
+    font-family: "neue_haas_grotesk_display65Md";
+    font-size: 15px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    line-height: 22px;
+    max-width: 50ch;
+    color: var(--grøn);
+    margin-left: 1rem;
+  }
+
+  .p_2 {
+    font-family: "neue_haas_grotesk_display65Md";
+    font-size: 14px;
+    margin-bottom: 4rem;
+    color: var(--grøn);
+    text-align: end;
+    margin-left: 1.5rem;
+  }
+
+  .p_3 {
+    font-family: "neue_haas_grotesk_display45Lt";
+    font-size: 14px;
+    color: var(--primary_beige);
+    margin-left: 1rem;
+  }
+  h3 {
+    font-family: "neue_haas_grotesk_display45Lt";
+    font-size: 17px;
+    margin-bottom: 1rem;
+    color: var(--grøn);
+    margin-left: 1.5rem;
+    text-align: end;
+    margin-top: -0.5rem;
+  }
+}
