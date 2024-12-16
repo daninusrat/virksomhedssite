@@ -20,8 +20,8 @@
       </a>
     </div>
     <header>
-      <nav>
-        <ul class="menu">
+      <nav class="menu">
+        <ul>
           <li><a href="index.html">FORSIDE</a></li>
           <li>
             <a href="#">VI TILBYDER</a>
@@ -45,7 +45,58 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <section class="kontakt-container">
+        <form action="#" method="post" class="kontakt-form">
+          <label for="navn">Navn*</label>
+          <input type="text" id="navn" name="navn" placeholder="Dit navn" required />
+
+          <label for="email">E-mail*</label>
+          <input type="email" id="email" name="email" placeholder="Din e-mail" required />
+
+          <label for="besked">Besked*</label>
+          <textarea id="besked" name="besked" rows="5" placeholder="Din besked..." required></textarea>
+
+          <button type="submit" class="button">Send besked</button>
+        </form>
+
+        <!-- Kontakt Info -->
+        <div class="kontakt-info">
+          <h3>Ring til os</h3>
+          <p>Du er altid velkommen til at ringe til os. Her kan vi svare på dine spørgsmål og give et tilbud.</p>
+          <p><strong>TLF: 48 94 61 04</strong></p>
+
+          <h3>Skriv til os</h3>
+          <p>Send os en e-mail på følgende adresse:</p>
+          <p><strong>storke.foto@mail.dk</strong></p>
+
+          <h3>Besøg os</h3>
+          <p>Frederiksborgvej 53, 3450 Allerød</p>
+        </div>
+      </section>
+
+      <!-- Kort Sektion -->
+      <section class="kort-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4477.071129103772!2d12.345707076840819!3d55.87072397312808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652469468bfcc69%3A0x23e86492e5c436f5!2sskolefoto%20-%20Storke%20Foto%20%7C%20skolefoto!5e0!3m2!1sda!2sdk!4v1734338258694!5m2!1sda!2sdk" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+      <!-- Billedgalleri Sektion -->
+      <section class="grid_1-1-1">
+        <div class="billede billede-hidden">
+          <img src="img/kontakt/kontakt_1.webp" alt="Galleri Billede 1" />
+        </div>
+        <div class="billede">
+          <img src="img/kontakt/kontakt_2.webp" alt="Galleri Billede 2" />
+        </div>
+        <div class="billede billede-hidden">
+          <img src="img/kontakt/kontakt_3.webp" alt="Galleri Billede 3" />
+        </div>
+      </section>
+
+      <!-- Slogan -->
+      <h2 class="slogan">Storke Foto skaber en god og rar atmosfære med trygge rammer for både børn og voksne</h2>
+      <img src="img/logo_.webp" alt="" class="img__logo" />
+    </main>
     <!-- Footer -->
     <footer>
       <div class="grid_1-1-1_foot">

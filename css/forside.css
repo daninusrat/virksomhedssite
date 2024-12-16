@@ -9,3 +9,97 @@ img {
   height: auto;
   display: block;
 }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+html {
+  --primary_beige: #fffaef;
+  --grøn: #315353;
+  --brun: #6f5050;
+  --rød: #8d3232;
+
+  --space_xs: ;
+  --space_s: ;
+  --space_m: ;
+  --space_l: ;
+  --space_xl: ;
+}
+
+/* Grid Sektion */
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background-color: var(--primary_beige);
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.col img {
+  width: 100%;
+  max-width: 280px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.col p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.button {
+  padding: 8px 15px 8px 15px;
+  font-size: 13px;
+  margin-bottom: 2rem;
+}
+
+/* H2 Slogan */
+.slogan {
+  text-align: center;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+  color: var(--grøn);
+}
+
+@media (min-width: 768px) {
+  .grid_1-1 {
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1rem;
+  }
+}
+
+.hero-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.img__logo {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 200px;
+  height: auto;
+  align-items: center;
+}
