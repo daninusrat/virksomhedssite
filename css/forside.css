@@ -10,18 +10,6 @@ img {
   display: block;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 html {
   --primary_beige: #fffaef;
   --grøn: #315353;
@@ -63,11 +51,15 @@ html {
   font-size: 1rem;
   color: #333;
   margin-bottom: 1rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
 }
 .button {
   padding: 8px 15px 8px 15px;
   font-size: 13px;
   margin-bottom: 2rem;
+  text-decoration: none;
+  color: #315353;
 }
 
 /* H2 Slogan */
