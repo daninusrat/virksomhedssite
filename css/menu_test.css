@@ -15,6 +15,7 @@ header {
   padding: 10px;
   border-radius: 35px;
   background-color: var(--primary_beige);
+  z-index: 10;
 }
 
 nav {
@@ -103,6 +104,7 @@ ul li ul.dropdown {
   display: none;
   padding: 0;
   margin: 0;
+  border-radius: 15px;
 }
 
 ul li:hover ul.dropdown {
@@ -125,6 +127,7 @@ ul li:hover ul.dropdown {
 @media screen and (max-width: 930px) {
   header {
     justify-content: end;
+    z-index: 10;
   }
 
   .menu {
@@ -153,9 +156,11 @@ ul li:hover ul.dropdown {
   nav.active .menu {
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: #fffcf9;
     position: absolute;
+    border-radius: 15px;
     top: 94px;
+
     left: 0;
     width: 100%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
