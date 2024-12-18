@@ -190,9 +190,18 @@ h3 {
     font-family: "neue_haas_grotesk_display65Md";
     font-size: 26px;
     color: var(--grøn);
-    margin-left: 1.5rem;
+    margin-right: 1rem;
     margin-top: 4rem;
     text-align: end;
+  }
+
+  h3 {
+    font-family: "neue_haas_grotesk_display45Lt";
+    font-size: 17px;
+    margin-bottom: 1rem;
+    color: var(--grøn);
+    margin-right: 1rem;
+    text-align: start;
   }
 
   p {
